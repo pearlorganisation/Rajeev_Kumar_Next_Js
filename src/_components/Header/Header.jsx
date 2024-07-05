@@ -7,10 +7,10 @@ const Header = () => {
 
   const navigation = [
     { title: "Home", path: "#" },
-    { title: "About Us", path: "/aboutUs" },
+    { title: "About Us", path: "about_us" },
     { title: "Webinar", path: "#" },
     { title: "Blog", path: "#" },
-    { title: "Contact Us", path: "#" },
+    { title: "Contact Us", path: "contact_us" },
   ];
 
   return (
@@ -68,9 +68,8 @@ const Header = () => {
           </div>
         </div>
         <div
-          className={`flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-            state ? "block" : "hidden"
-          }`}
+          className={`flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${state ? "block" : "hidden"
+            }`}
         >
           <ul className="justify-end items-center font-medium space-y-6 md:flex md:space-x-12 md:space-y-0">
             {navigation.map((item, idx) => {
